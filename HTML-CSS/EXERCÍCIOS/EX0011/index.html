@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midia em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagem Dinamicas</h1>
+    <p>
+      Tente abri esse site em varios dispositivos diferente ou simplismente
+      diminua o tamnaho do seu navegador!
+    </p>
+    <picture>
+      <source
+        media="(max-width: 750px )"
+        srcset="img/pequena.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width:1050px )"
+        srcset="img/Media.png"
+        type="image/png"
+      />
+      <img src="img/Grande.png" alt="Imagem flexível" /> </picture
+    ><!--permite varias fontes de imagem, deve seguir a sequência correta! -->
+
+    <h1>Trabalhando com audios</h1>
+    <p>
+      tente tocar essa msuisca em varios tipos d edispositivos ou simplismente
+      diminua o tamanho do navegador.
+    </p>
+    <audio src="midia/trap.mp3" controls></audio>
+    <h2>Outra maneira de tocar o audio em suas varias verssões</h2>
+    <audio controls>
+      <source src="midia/trap.mp3" type="audio/mpeg" />
+      <source src="midia/trap.wav" type="audio/mwav" />
+      <source src="midia/trap.ogg" type="audio/ogg" /></audio
+    ><!--Tipos de aquivos surportados pelos masi diverssos tipos d enavegadores-->
+  </body>
+</html>

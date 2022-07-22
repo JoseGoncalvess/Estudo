@@ -1,0 +1,35 @@
+@charset "UTF-8"; /* Regra de acentuação*/
+/*Em HTML ID = CSS é # (So pode um elemento)
+  Em HTML Class = CSSPode varios elementos) .*/
+body{
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+  color: #1b8662;
+}
+#principal{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #1b8662 ;
+  border-radius: 10px;
+}
+h2{
+  color: rgb(14, 94, 68);
+}
+.basico{
+  color: #20b718;
+  font-weight:bold ;
+}
+.intermediario{
+  color: #ffff2e;
+  font-weight:bold ;
+}
+.avancado{
+  color: #ff2f2f;
+  font-weight:bold ;
+}
+.destaque{
+  background-color: #8d8d4e9a;
+}

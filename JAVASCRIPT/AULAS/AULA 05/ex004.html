@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro Programa em Js</title>
+    <style>
+      body {
+        background-color: rgb(118, 180, 159);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(31, 125, 80);
+        font-size: 20px;
+      }
+      h1 {
+        color: rgb(255, 255, 255);
+      }
+      p {
+        color: rgb(255, 255, 255);
+        font: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já Me Livrei da Maldição</p>
+    <!--Programa em Java Script-->
+
+    <script>
+      var nome = window.prompt('Qual é o seu Nome ?')
+      document.write(`Olá, ${nome}. Seu Nome tem, ${nome.length} letras! <br/>`)
+      document.write(`Seu Nome em Maiúsculo é ${nome.toUpperCase()} <br/>`)
+      document.write(`Seu Nome em Maiúsculo é ${nome.toLowerCase()}`)
+    </script>
+  </body>
+</html>
