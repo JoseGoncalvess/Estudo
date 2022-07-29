@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table {
+        width: 500px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      thead,
+      tfoot {
+        background-color: rgb(105, 103, 103);
+        color: white;
+      }
+      .num {
+        text-align: right;
+      }
+      caption {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: darkgray;
+        color: black;
+        font-weight: bold;
+        font-size: 1.8em;
+        padding: 10px;
+      }
+      tbody tr:nth-child(even) {
+        background-color: rgb(68, 0, 255); /* 2n-1*/
+      }
+      tbody tr:nth-child(odd) {
+        background-color: rgb(255, 0, 0); /* 2n*/
+      }
+    </style>
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--Anatomia para tabelas grandes
+    TABELA
+    capcham = legenda
+      Thead
+        TR,TD,TH
+      Tbody
+        TR,TD,TH
+      Tfooter
+        TR,TD,TH-->
+
+    <table>
+      <caption>
+        População das Undades fede-ativavas
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px">População</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>são Paulo</td>
+          <td class="num">45.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>são Paulo</td>
+          <td class="num">45.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>são Paulo</td>
+          <td class="num">45.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>são Paulo</td>
+          <td class="num">45.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.856,98</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">456.856,98</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Numero populacional</th>
+          <td><strong>000000</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
