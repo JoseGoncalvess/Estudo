@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabela em HTML5</title>
+    <style>
+      body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      table {
+        width: 500px;
+        height: 500px;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 5px;
+        width: 500px;
+        border: solid black;
+        text-align: left;
+        vertical-align: bottom;
+      }
+      .number {
+        text-align: right;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+HIERARQUIA D ETABELA
+TABLE = TABELA
+TABLE ROW = LINHA D ETABELA
+TABLE HEAD = CABEÇALHO DE TABELA
+TABE DATA = DADO DE TABELA 
+
+  -->
+    <table>
+      <tr>
+        <!--Primeira linha-->
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+      </tr>
+      <tr class="linha">
+        <!--Segunda linha-->
+        <td>A2</td>
+        <td class="number">20</td>
+        <td>C2</td>
+      </tr>
+      <tr>
+        <!--Tercera linha-->
+        <td>A3</td>
+        <td>B3</td>
+        <td>C3</td>
+      </tr>
+      <tr>
+        <!--Quarta linha-->
+        <td>A4</td>
+        <td>B4</td>
+        <td>C4</td>
+      </tr>
+    </table>
+  </body>
+</html>
