@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: antiquewhite;
+        color: rgb(11, 65, 47);
+      }
+    </style>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!--Fomulário basico-->
+    <h1>Meu primeiro Formulário</h1>
+    <form action="Cadastro.php" method="post" autocomplete="off">
+      <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="inome" id="nome" />
+      </p>
+      <p>
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome" />
+      </p>
+      <p><input type="submit" value="Enviar!" /></p>
+    </form>
+
+    <!---Metodo de envio
+      Get - ate 3000 letras e nãod a pra enviar arquivos, bem como mostra as informações na url.
+
+      POST - Meio que econde as info mas nãod eixa compartilhar o o link d epesqusia. suporta mais 3000 letars e envio d earquivos.
+
+      **aprende sobre https para segurança de dados..*
+    
+    
+    -->
+  </body>
+</html>
