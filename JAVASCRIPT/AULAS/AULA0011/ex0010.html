@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sistema de Multas</h1>
+    <p>
+      Velocidade do carro <input type="number" name="txtvel" id="txtvel" /> km/h
+
+      <input type="button" value="Verificar" onclick="cauclular()" />
+      <input type="button" value="Refresh" />
+    </p>
+    <p id="res"></p>
+
+    <script>
+      function cauclular() {
+        txtv = window.document.getElementById('txtvel')
+        res = window.document.getElementById('res')
+        vel = Number(txtv.value)
+
+        res.innerHTML = `A sua velocidade atual é de ${vel}.<br>`
+
+        if (vel > 50) {
+          res.innerHTML +=
+            'Você esta acima da velocidade, po isso FoiMULTADO!<br>'
+        }
+        res.innerHTML += `Ultiliz sempre o cinto de segurança!`
+      }
+    </script>
+  </body>
+</html>

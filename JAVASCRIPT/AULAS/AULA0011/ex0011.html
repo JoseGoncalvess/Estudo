@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Passaport</h1>
+      <p>
+        Eu sou de <input type="text" name="pais" id="pais" />.
+        <input type="button" value="Verificar" onclick="sondar()" />
+        <input type="reset" value="Refresh" onclick="ref" />
+      </p>
+      <p id="res"></p>
+    </main>
+
+    <script>
+      function sondar() {
+        tpais = window.document.getElementById('pais')
+        res = window.document.getElementById('res')
+        pais = tpais.value
+        res.innerHTML = `Você é natural de ${pais}.<br>`
+
+        if (pais != 'Brasil') {
+          res.innerHTML += 'Percebi que é <STRONG>estrangeiro</STRONG>!<br>'
+          res.innerHTML += `Seja bem vido AO <STRONG>BRASIL</STRONG>!`
+        } else {
+          res.innerHTML += 'Veja so um <STRONG>brasileiro</STRONG>!<br>'
+          res.innerHTML += `Como é bom ter você de volta AO <STRONG>BRASIL</STRONG>!`
+        }
+      }
+    </script>
+  </body>
+</html>
