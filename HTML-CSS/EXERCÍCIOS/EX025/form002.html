@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formualrio</title>
+  </head>
+  <body>
+    <h1>Teste de Formualrio</h1>
+    <form action="Cadastro.php" method="post" autocomplete="on">
+      <p>
+        <label for="iusu">Usuario:</label><br />
+        <input
+          type="text"
+          name="usu"
+          id="iusu"
+          required
+          maxlength="15"
+          minlength="5"
+          size="10"
+          placeholder="Nome do Usuario"
+          autocomplete="username"
+        /><!--
+          required = campo obrigatorio
+          maxlength="15"= maximo de caracteres
+          minlength="5" = minimo de caracteries
+          size="10" = tamanho do bloco input
+          placeholder="Nome do Usuario" = diga do que colocar no campo
+          autocomplete="username" = qe tipod e informação vai no input
+        -->
+      </p>
+      <p>
+        <label for="isen">Senha:</label><br />
+        <input
+          type="password"
+          name="sen"
+          id="isen"
+          required
+          minlength="5"
+          size="10"
+          placeholder="Senha do Usuario"
+          autocomplete="new-password"
+        />
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
