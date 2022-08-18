@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form008</title>
+  </head>
+  <body>
+  <p><label for="iano">Eu nasci em :</label>
+  <input type="number" name="ano" id="iano" min="1900" max="2022" required oninput="calcIdadeo()" value="2000" ></p>
+  <p>
+    <label for="idade">Sua inade é: </label>
+    <output id="sidade">0</output>
+    
+  </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+    <script>
+      function calcIdadeo(){
+        let ano = new Date().getFullYear()
+        sidade.innerHTML = Number(ano) - Number(iano.value) 
+      }
+    </script>
+  </body>
+</html>

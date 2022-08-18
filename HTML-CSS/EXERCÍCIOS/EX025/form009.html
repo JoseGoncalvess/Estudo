@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form009</title>
+  </head>
+  <body>
+    <label for="ival">Valor:</label>
+    <input type="range" name="val" id="inum" value="10" max="20" min="0" oninput="ival.innerHTML = Number(inum.value)">
+    <output id="ival">10</output>
+    
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
