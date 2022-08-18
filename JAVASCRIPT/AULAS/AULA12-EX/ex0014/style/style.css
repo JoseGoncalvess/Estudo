@@ -1,7 +1,8 @@
 
 body{
   background-color: rgb(25, 140, 197);
-  font-family: normal 15pt Arial, Helvetica, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
 }
 header{
   color: white;
@@ -13,11 +14,22 @@ section{
   padding: 15px;
   width: 500px;
   margin: auto;
+  font-size: 2.5vw;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.454);
   
 } 
+div{
+  text-align: center;
+  padding: 10px;
+}
 footer{
   color:white;
   text-align: center;
   font-style: italic;
+  font-size: 3vw;
+}
+img{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
 }
