@@ -16,6 +16,15 @@ section{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.454);
   
 } 
+p,div{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13pt;
+  font-weight: bolder;
+}
+#foto{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
+  border-radius: 50%;
+}
 footer{
   color:white;
   text-align: center;
