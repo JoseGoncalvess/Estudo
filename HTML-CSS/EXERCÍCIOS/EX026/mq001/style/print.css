@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+menu{
+
+  display: none;
+}
+header h1{
+  text-align: center;
+  font-weight: 1.5em;
+}
+article{
+  width: 100vw;
+  text-align: justify;
+}
+main h2 {
+  text-align: right;
+  font-weight: 1em;
+}
+
+article::after{
+  font-weight: bolder;
+  content: 'Este post foi feito no dia 19 Agosto 2022 as 13:42:20';
+}
