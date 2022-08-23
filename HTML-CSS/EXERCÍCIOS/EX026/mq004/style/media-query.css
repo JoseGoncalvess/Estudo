@@ -1,2 +1,83 @@
 @charset "UTF-8";
 /* Mobile First*/
+/* TYpical devices Breakpoints
+--------------------------------
+pequenas telas: ate 600px
+phone:  600px ate 768px
+Tablet: 769 px ate 992px
+Desktop: 992px ate 1200px
+grandes telas :acima de 1200pxs
+---------------------------------
+*/
+
+@media print {
+  *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body{
+    background-image: url(../img/back-print.jpg);
+  }
+  main{
+    text-align: center;
+    width: 80vw;
+    border: 2px solid black;
+  }
+  main::after{
+    
+    content: 'So vai aparecer aqui brou';
+  }
+  main h1 {
+    font-size: 18px;
+    text-shadow: none;
+  }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display:none;}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body{
+    background-image: url(../img/back-tablet.jpg);
+
+  }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+  
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body{
+    background-image: url(../img/back-pc.jpg);
+
+  }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+
+    
+ 
+}
+  
+@media screen and (min-width: 1200px){
+  body{
+    background-image: url(../img/back-tv.jpg);
+
+  }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display:block;}
+    main{
+      width: 700px;
+    }
+}
+
