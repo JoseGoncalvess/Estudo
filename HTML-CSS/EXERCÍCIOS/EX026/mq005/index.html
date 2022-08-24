@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Menu Respanssivo</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1>Notícias</h1>
-      <menu>
+      <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+      <menu id="itens">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Finanças</a></li>
@@ -44,5 +49,15 @@
         </p>
       </article>
     </main>
+    <script>
+      function clickMenu() {
+        var menu = window.document.querySelector('menu#itens')
+        if (menu.style.display == 'block') {
+          menu.style.display = 'none'
+        } else {
+          menu.style.display = 'block'
+        }
+      }
+    </script>
   </body>
 </html>
