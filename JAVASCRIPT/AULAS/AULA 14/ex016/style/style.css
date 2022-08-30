@@ -1,0 +1,37 @@
+
+body{
+  background-color: rgb(55, 183, 63);
+  font-family: normal 15pt Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+header{
+  color: white;
+  text-align: center;
+}
+section{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.454);
+  font-size: 20px;
+  
+} 
+input{
+  margin: 5px;
+  border-radius: 3px;
+  border:  1px solid rgba(0, 0, 0, 0.208);
+}
+button{
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.324);
+}
+footer{
+  color:white;
+  text-align: center;
+  font-style: italic;
+}
