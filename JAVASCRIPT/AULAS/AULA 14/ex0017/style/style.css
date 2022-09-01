@@ -1,10 +1,10 @@
 
 body{
-  background-color: rgb(25, 140, 197);
+  background-color: rgb(76, 24, 121);
   font-family: normal 15pt Arial, Helvetica, sans-serif;
 }
 header{
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 section{
@@ -14,10 +14,26 @@ section{
   width: 500px;
   margin: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.454);
-  
 } 
+
+input{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#button{
+  background-color: rgb(97, 97, 97);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.484);
+}
 footer{
   color:white;
   text-align: center;
   font-style: italic;
+}
+a{
+color: white;
+text-decoration: none;
+font-size: larger;
+font-weight: bold;
+
 }

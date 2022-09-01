@@ -4,19 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Modelo de Ex</title>
   </head>
   <body>
     <header>
-      <h1>titulo</h1>
+      <h1>Tabuada Dinamica</h1>
     </header>
     <section>
-      <div></div>
-      <div></div>
+      <div>
+        <p>
+          Numero: <input type="number" name="number" id="txtn" />
+          <input
+            type="button"
+            value="Gerar Tabuada"
+            onclick="tabuada()"
+            id="button"
+          />
+        </p>
+      </div>
+      <div>
+        <select name="tabuada" id="seltab" size="10">
+          <option>Digite Um numero!</option>
+        </select>
+      </div>
     </section>
     <footer>
-      <p>&copy;José Gonçalves</p>
+      <p>
+        &copy;<a href="https://github.com/JoseGoncalvess">José Gonçalves</a>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
